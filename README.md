@@ -1,26 +1,24 @@
-## left-pad
+## leftpad4j
 
-String left pad.
+String left pad re-implemented in Java.
 
-P.S: [I've unpublished it from NPM.](https://medium.com/@azerbike/i-ve-just-liberated-my-modules-9045c06be67c#.b6xzn8r6w)
-
-## Install
+## Build
 
 ```bash
-$ npm install azer/left-pad
+$ mvn clean install
 ```
 
 ## Usage
 
-```js
-leftpad = require('left-pad')
+```java
+import static net.ccmcomputing.leftpad.LeftPad.leftpad;
 
-leftpad('foo', 5)
+leftpad("foo", 5)
 // => "  foo"
 
-leftpad('foobar', 6)
+leftpad("foobar", 6)
 // => "foobar"
 
-leftpad(1, 2, 0)
+leftpad("1", 2, "0")
 // => "01"
 ```
